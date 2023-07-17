@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c2t7db2y08uui"]
+[gd_scene load_steps=7 format=3 uid="uid://c2t7db2y08uui"]
 
-[ext_resource type="PackedScene" uid="uid://bmo6slj7r0x1k" path="res://environment_test.tscn" id="1_vjgey"]
+[ext_resource type="PackedScene" uid="uid://c8f1kp8axdb4y" path="res://Environment.blend" id="1_ddbg8"]
+[ext_resource type="PackedScene" uid="uid://dfwv6r7sy16cd" path="res://scenes/tree_1.tscn" id="3_r2cgj"]
 [ext_resource type="PackedScene" uid="uid://dbm2hjqurpxe5" path="res://Player.tscn" id="3_rayw8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y3ogs"]
@@ -18,13 +19,23 @@ glow_enabled = true
 
 [node name="World" type="Node3D"]
 
+[node name="Environment" parent="." instance=ExtResource("1_ddbg8")]
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+transform = Transform3D(-0.866025, -0.433013, 0.250001, -0.406123, 0.900842, 0.153452, -0.291658, 0.0313625, -0.956008, 0, 0, 0)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_ghbxj")
 
-[node name="Environment" parent="." instance=ExtResource("1_vjgey")]
-
 [node name="Player" parent="." instance=ExtResource("3_rayw8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.855755, 12.8691, 0)
+
+[node name="tree1" parent="." instance=ExtResource("3_r2cgj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 3.8297, -12)
+
+[node name="tree2" parent="." instance=ExtResource("3_r2cgj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.029, -3.36445, 7.15275)
+
+[node name="tree3" parent="." instance=ExtResource("3_r2cgj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.01079, 12.8593, -2.81095)
