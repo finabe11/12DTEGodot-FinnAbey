@@ -1,7 +1,10 @@
 extends CharacterBody3D
 
 @export var mouse_sensitivity = 0.001
-const SPEED = 5
+var SPEED = 5
+@export var run_speed = 10
+@export var walk_speed = 5
+@export var FRICTION = 0.01
 const JUMP_VELOCITY = 6
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
