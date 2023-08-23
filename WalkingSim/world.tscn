@@ -14,7 +14,7 @@
 albedo_texture = ExtResource("2_jojsb")
 uv1_triplanar = true
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ypcol"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7228g"]
 render_priority = 0
 shader = ExtResource("2_ewnc3")
 shader_parameter/player_pos = Vector3(1e+06, 1e+06, 1e+06)
@@ -46,7 +46,7 @@ _surfaces = [{
 "format": 4123,
 "index_count": 12,
 "index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 3, 0, 1, 0, 0, 0, 4, 0, 5, 0, 6, 0, 7, 0, 5, 0, 4, 0),
-"material": SubResource("ShaderMaterial_ypcol"),
+"material": SubResource("ShaderMaterial_7228g"),
 "primitive": 3,
 "vertex_count": 8,
 "vertex_data": PackedByteArray(0, 0, 0, 191, 0, 0, 128, 63, 0, 0, 0, 0, 255, 127, 255, 127, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 255, 127, 255, 127, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 0, 255, 127, 255, 127, 0, 0, 0, 63, 0, 0, 128, 63, 0, 0, 0, 0, 255, 127, 255, 127, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 191, 0, 0, 255, 127, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 255, 127, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 255, 127, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 63, 0, 0, 255, 127)
@@ -95,7 +95,7 @@ metadata/SimpleGrassTextured = "1.0.2"
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.250001, -0.406123, 0.900842, 0.153452, -0.291658, 0.0313625, -0.956008, 0, 0, 0)
 light_color = Color(1, 0.854902, 0.54902, 1)
-light_energy = 1.825
+light_energy = 4.099
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
