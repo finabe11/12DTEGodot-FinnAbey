@@ -51,4 +51,4 @@ offset_bottom = 40.0
 
 [node name="Collection Tracker" type="Label" parent="Control/MarginContainer"]
 layout_mode = 2
-text = "Fuel Cells : 0 / 10"
+text = "Gems : 0 / 10"

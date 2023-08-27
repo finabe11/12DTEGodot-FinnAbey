@@ -7,7 +7,7 @@ var SPEED = 5
 @export var FRICTION = 0.15
 const JUMP_VELOCITY = 6.1
 
-var pages_collected = 0 
+var Gems = 0 
 
 @onready var ray = $Camera3D/RayCast3D
 @onready var interaction_notifier = $Control/InteractionNotifier
@@ -33,8 +33,8 @@ func check_ray_hit():
 			interaction_notifier.visible = true
 		if Input.is_action_just_pressed("Use"):
 			ray.get_collider().queue_free()
-			pages_collected +=1
-			collection_tracker.text = "Fuel cells : " + str(pages_collected) + " / 10"
+			Gems +=1
+			collection_tracker.text = "Gems : " + str(Gems) + " / 10"
 	else:
 		interaction_notifier.visible = false
 

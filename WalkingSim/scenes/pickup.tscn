@@ -1,13 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://qqom7f2bo4wx"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_44u2i"]
+[ext_resource type="PackedScene" uid="uid://buiwg3btl60pv" path="res://models/gems/gem1.glb" id="1_5vm0e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hv4r0"]
 
 [node name="Pickup" type="Area3D" groups=["Pickup"]]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_44u2i")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_hv4r0")
+
+[node name="gem1" parent="." instance=ExtResource("1_5vm0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.559792, 0)

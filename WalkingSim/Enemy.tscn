@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5nqxr3ocwk2l"]
+
+[ext_resource type="PackedScene" uid="uid://b3sy0f23nmw27" path="res://models/slimes/slime2.glb" id="1_x1y4f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e64cj"]
+size = Vector3(1.50271, 1.31391, 1.38975)
+
+[node name="Enemy" type="Node3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00094676, 0.57573, 0)
+shape = SubResource("BoxShape3D_e64cj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="slime2" parent="." groups=["Enemy"] instance=ExtResource("1_x1y4f")]
